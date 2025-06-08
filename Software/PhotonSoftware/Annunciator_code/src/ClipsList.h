@@ -30,7 +30,7 @@ const unsigned int BEGIN_DEV_NUM = 5;   // the device number reported if all ADR
 // the number of the sensor that triggered the event.  The device number is a two-digit
 // number, so the first two characters of the message are the device number. 
 
-const uint8_t MAX_NUM_CLIPS = 8; // number of clips in the list
+const uint8_t MAX_NUM_CLIPS = 12; // number of clips in the list
 
 // 0: 21 Reception Desk
 // 1: 22 Wood shop
@@ -40,5 +40,9 @@ const uint8_t MAX_NUM_CLIPS = 8; // number of clips in the list
 // 5: 28 Electronics
 // 6: 1 sensor 6 has no audio
 // 7: 24 Frontdoor
+// 8: 200 Close in 30 minutes
+// 9: 201 Close in 15 minutes
+// 10: 202 Close now
+// 11: 203 Testin
 
-unsigned int clipList[] = {21, 22, 23, 26, 27, 28, 1, 24}; // clips to play
+unsigned int clipList[] = {21, 22, 23, 26, 27, 28, 1, 24, 200, 201, 202, 203}; // clips to play
