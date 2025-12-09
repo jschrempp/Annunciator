@@ -73,6 +73,9 @@
  *              simulates receiving an event from a sensor with the specified device number
  *              set in its jumpers.
  *
+ * version 1.0.3  12/8/25
+ *      - after 5 minutes from the last playing of a clip, pressing the replay button plays the "No Message"
+ *        clip in lieu of the last message played.
  * version 1.0.2 6/8/2025
  *      - expanded ClipsList with 4 new clips for MN MOD announcements
  *  
@@ -94,7 +97,7 @@
  * 
  */
 
-#define VERSION "1.0.2"
+#define VERSION "1.0.3"
 
 // NOTE:  MUST USE PARTICLE OS VERSION 3.0.0 OWING TO BUGS IN MINI MP3 PLAYER LIBRARY.
   //    Specifically, some functions have non-void return value declared but no return statement.
